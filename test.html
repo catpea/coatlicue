@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>test</title>
+  </head>
+  <body>
+    <div id="scene1" class="docs-demo-html">
+      <div class="large row">
+        <div class="medium pyramid">
+          <div class="triangle">a</div>
+          <div class="square">b</div>
+          <div class="circle">c</div>
+        </div>
+      </div>
+    </div>
+    <script type="module">
+      import { animate, createTimeline } from "https://esm.sh/animejs";
+
+      // const tl = createTimeline({ defaults: { duration: 750 } });
+      // tl.label("start").add(".square", { x: "15rem" }, 500).add(".circle", { x: "15rem" }, "start").add(".triangle", { x: "15rem", rotate: "1turn" }, "<-=500");
+
+      await animate('#scene1', {
+        targets: '#scene1',
+        opacity: { from: 0, to: 1 },
+        duration: 1000,
+        ease: 'inOutQuint'
+      });
+
+
+    </script>
+  </body>
+</html>

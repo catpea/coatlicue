@@ -1,0 +1,30 @@
+{
+  "name": "coatlicue",
+  "version": "1.0.0",
+  "description": "Finding The Daughters Of Eve",
+  "main": "index.js",
+  "scripts": {
+    "server": "http-server -c-1 -o .",
+    "save": "git add .; git commit -m 'Updated Release'; npm version patch; npm publish; git push --follow-tags;",
+    "upload": "git add .; git commit -m 'Updated Release'; git push --follow-tags;",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+  "keywords": [],
+  "type": "module",
+
+  "author": "catpea (https://github.com/catpea)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catpea/coatlicue.git"
+  },
+  "bugs": {
+    "url": "https://github.com/catpea/coatlicue/issues"
+  },
+  "homepage": "https://catpea.github.io/coatlicue",
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/catpea"
+  }
+}
